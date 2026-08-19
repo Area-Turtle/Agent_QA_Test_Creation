@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "qa": "node qa-agent.js",
-    "api:test": "newman run tests/api/restful-booker.json",
+    "api:test": "newman run tests/api/Restful-Booker-API_Testing.postman_collection.json -e tests/api/Restful-Booker-Testing.postman_environment.json",
     "e2e:test": "cypress run"
   },
   "devDependencies": {
     "cypress": "^15.0.0",
     "newman": "^6.0.0"
+  },
+  "dependencies": {
+    "codex": "^0.2.3"
   }
 }
