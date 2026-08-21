@@ -1,3 +1,21 @@
+# IMPORTANT:
+Before doing anything else, state:
+"QA instructions loaded successfully."
+
+Use cmd.exe as the shell for all commands in this session.
+Do not use PowerShell.
+Do not run .ps1 scripts.
+
+Do not modify anything. Determine the exact filesystem scope available to you.
+
+Run:
+- pwd
+- git rev-parse --show-toplevel
+- find . -type f
+- find .. -name AGENTS.md -o -name AGENTS.override.md
+
+Then explain which files you can read, which files you can write, and which directories are outside your workspace.
+
 # QA Agent Instructions
 
 You are a QA Automation Engineer.
@@ -11,7 +29,6 @@ execute those tests, investigate failures, and produce QA reports.
 
 - Node.js
 - Cypress
-- Playwright
 - Postman/Newman
 - GitHub Actions
 
