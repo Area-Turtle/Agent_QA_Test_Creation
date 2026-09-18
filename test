@@ -1,0 +1,74 @@
+https://github.com/Area-Turtle/github-final-project/blob/main/README.md
+https://github.com/Area-Turtle/github-final-project/blob/main/LICENSE
+https://github.com/Area-Turtle/github-final-project/blob/main/CODE_OF_CONDUCT.md
+https://github.com/Area-Turtle/github-final-project/blob/main/CONTRIBUTING
+https://github.com/Area-Turtle/github-final-project/blob/main/simple-interest.sh
+
+curl -s https://api.github.com/repos/Area-Turtle/mcino-Introduction-to-Git-and-GitHub | jq -r '.parent.clone_url'
+    https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub.git
+
+git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+git merge bug-fix-typo
+git commit -m "merge bug-fix-typo"
+[main cd3a19a] merge bug-fix-typo
+git push
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 236 bytes | 236.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Area-Turtle/mcino-Introduction-to-Git-and-GitHub.git
+   6ec59a9..cd3a19a  main -> main
+
+git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+git merge bug-fix-typo  
+Updating ad95b0a..0329bd5
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+git checkout -b bug-fix-revert
+Switched to a new branch 'bug-fix-revert'
+
+git revert HEAD --no-edit
+[bug-fix-revert 7f0a0e9] Revert "update footer"
+ Date: Sat Sep 12 15:41:42 2026 -0700
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+11326
+
+curl.exe -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/11326 | jq -r '.head.repo.clone_url'
+
+curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/11326 | jq -r '.head.repo.clone_url'
+https://github.com/Area-Turtle/mcino-Introduction-to-Git-and-GitHub.git
+
+https://github.com/Area-Turtle/mcino-Introduction-to-Git-and-GitHub/branches
+
+#!/bin/bash
+
+theia@theia-zachary007:/home/project$ ls -l backup.sh
+-rwxr-xr-x 1 theia users 1378 Sep 13 00:52 backup.sh
+
+theia@theia-zachary007:/home/project$ ls -l
+total 24
+-rw-r--r-- 1 theia users 4422 Sep 13 01:02 backup-1789275736.tar.gz
+-rwxr-xr-x 1 theia users 1381 Sep 13 01:02 backup.sh
+drwxr-sr-x 2 theia users 4096 Sep 13 01:02 important-documents
+-rw-r--r-- 1 theia users 4995 Sep 28  2022 important-documents.zip
+
+theia@theia-zachary007:/home/project$ ls -l /usr/local/bin/backup.sh
+-rwxr-xr-x 1 root root 1381 Sep 13 01:05 /usr/local/bin/backup.sh
+
+theia@theia-zachary007:/home/project$ crontab -l
+*/1 * * * * /usr/local/bin/backup.sh /home/project/important-documents /home/project
+
+ibmcloud ce application create --name prodlist --image us.icr.io/${SN_ICR_NAMESPACE}/prodlist --registry-secret icr-secret --port 5000 --build-context-dir products_list --build-source https://github.com/ibm-developer-skills-network/wzpvw-dealer_evaluation_backend_js.git
+
+dealerdetails1 = dealer_details
+ibmcloud ce application create --name dealerdetails1 --image us.icr.io/${SN_ICR_NAMESPACE}/dealerdetails --registry-secret icr-secret --port 8080 --build-context-dir dealerdetails1 --build-source https://github.com/ibm-developer-skills-network/wzpvw-dealer_evaluation_backend_js.git
